@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old Gamers</title>
+    <link rel="icon" type="image/x-icon" href="./mobile-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="description" content="Все об олдскульных видеоиграх: история, легендарные игры, популярные консоли и интервью с ветеранами индустрии. Погружайтесь в мир классического гейминга!"> 
+    <meta name="keywords" content="олдскульный гейминг, ретро игры, классические видеоигры, история видеоигр, аркадные автоматы, ретро консоли, интервью с разработчиками, видеоигры 80-х, видеоигры 90-х">
+    <style>
+        body {
+            margin: 0;
+            background-color: #FFF;
+            font-family: "Noto Sans", serif;
+        }
+        header {
+            background-color: #333; /* оранжевый */
+            text-align: center;
+            color: #FFF;
+            margin-right: auto;
+        }
+        nav {
+            background-color: #333; /* графитовый */
+            padding: 1px;
+            text-align: center;
+        }
+        nav  a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            gap: 20px;
+            padding: 20px;
+            display: grid; 
+            grid-template-columns: 1fr;
+        }
+        .content a
+        {
+            text-decoration: none;
+            color: rgb(24, 22, 22);
+        }
+        .box {
+            background-color: #EEE; /* светло-серый для контента */
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        article { 
+            background-color: #EEE; /* светло-серый для контента */
+            padding: 20px; 
+            margin: 10px;
+            height: auto; 
+            border-radius: 8px; 
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        @media (min-width: 768px) 
+        { 
+            .content 
+            {
+                 grid-template-columns: 1fr 1fr; 
+                 /* 2 столбца на экранах от 768px */ 
+                 gap: 20px; 
+                 /* Величина промежутка между статьями */ 
+            } 
+        }
+        img
+        {
+            max-width: 100%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        footer .icon {
+            display: inline-block;
+            background-color: #FF7F00;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 10px;
+            line-height: 40px;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./horizontal-logo.png" alt="Old Gamers" style="width: 20%; height: auto;">
+    </header>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+    <div class="content"> 
+        <a href="">
+        <article> 
+            <h2>История Олдскульного Гейминга</h2>
+            <img src="История олдскульного.png" alt="История олдскульного">   
+            <p>Узнайте, с чего начиналась эпоха видеоигр: от первых аркадных автоматов, заполнивших игровые залы, до появления культовых 16-битных консолей, которые стали любимыми домашними развлечениями. Погружение в мир пиксельной графики и зарождения игровых легенд.</p> 
+        </article> 
+        </a>
+        <a href="">
+            <article> 
+                <h2>Легендарные Игры</h2>
+                <img src="Легендарные.png" alt="Легендарные">  
+                <p>Вспомните игры, которые изменили представление о возможностях индустрии. От первых хитов, ставших классикой, до проектов, вдохновивших миллионы игроков по всему миру. Узнайте, почему именно эти игры продолжают оставаться эталоном спустя десятилетия.</p> 
+            </article> 
+        </a>
+        <a href="">
+            <article> 
+                <h2>Консоли и Аркадные Автоматы</h2>
+                <img src="Консоли и автоматы.png" alt="консоли и автоматы"> 
+                <p>Как аркадные автоматы стали частью культуры, а консоли захватили место в каждом доме? Исследуйте развитие технологий, которые превратили игры из развлечения для избранных в массовое явление. Истории о том, как гейминг захватывал мир шаг за шагом.</p>
+            </article> 
+        </a>
+        <a href="">  
+            <article> 
+                <h2>Интервью с Ветеранами Индустрии</h2> 
+                <img src="Ветераны.png" alt="Ветераны"> 
+                <p>Откровенные разговоры с теми, кто создавал историю видеоигр. Узнайте, как дизайнеры, программисты и продюсеры воплощали свои идеи в жизнь и какие вызовы стояли перед ними на пути к успеху. Подробности о том, как создавались проекты, вошедшие в золотой фонд видеоигр.</p> 
+            </article> 
+        </a>
+    </div>
+    <footer>
+        <div class="icon">FB</div>
+        <div class="icon">TW</div>
+        <div class="icon">IG</div>
+    </footer>
+</body>
+</html>
